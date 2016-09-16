@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    Make.create(make_params)
+    @makes = Make.create(make_params)
   end
 
   protected

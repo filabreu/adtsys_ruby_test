@@ -1,6 +1,6 @@
 class ModelsController < ApplicationController
   def index
-    Model.create(model_params)
+    @models = Model.create(model_params)
   end
 
   protected
